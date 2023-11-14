@@ -23,7 +23,7 @@ up:
 
 start: up dev
 
-first: build install dev
+setup: build install dev
 
 stop: $(ROOT_DIR)/docker-compose.yml
 	$(DOCKER_COMPOSE) kill || true

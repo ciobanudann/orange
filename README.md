@@ -1,8 +1,8 @@
-## First start
+## Setup
 
 ### To spin the docker container you can use the command below
 
-`make first`
+`make setup`
 
 ### If you want to run the application without docker you have to
 
