@@ -48,6 +48,7 @@ const FavoriteButton = () => {
     <button
       onClick={handleToggleFavorite}
       className="h-10 px-5 py-2 bg-yellow-200 rounded-xl w-max whitespace-nowrap"
+      data-cy="favorites-button"
     >
       {isFavoriteState ? "Remove from Favorites" : "Add to Favorites"}
     </button>

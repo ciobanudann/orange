@@ -1,6 +1,26 @@
-If you start the project for the first time you'll have to
+## First start
+
+### To spin the docker container you can use the command below
+
 `make first`
 
-If you already had project started at least once
+### If you want to run the application without docker you have to
+
+1. install packages `npm install`
+2. npm run dev
+
+## Rerun the application
+
+### To spin the docker container you can use the command below
+
 `make start`
-# orange
+
+### If you want to run the application without docker you have to
+
+`npm run dev`
+
+### Test
+
+## To run the test
+
+`npm run test`

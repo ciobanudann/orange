@@ -23,7 +23,9 @@ const BookCard: React.FC<Props> = ({
       className="flex flex-col items-center gap-4 p-4 bg-white rounded-xl"
     >
       <img src={thumbnail} className="h-72"></img>
-      <h3 className="font-bold">{title}</h3>
+      <h3 className="font-bold" data-cy={`book-card-title-${title}`}>
+        {title}
+      </h3>
       {subtitle}
       <p className="max-h-48">{textSnippet && parse(textSnippet)}</p>
     </Link>

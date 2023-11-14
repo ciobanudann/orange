@@ -28,6 +28,7 @@ const BooksList = () => {
         <input
           className="w-full h-12 p-4 rounded-md outline-none"
           value={query}
+          data-cy="book-search-input"
           onChange={handleSearchInputChange}
         />
       </div>
@@ -45,10 +46,10 @@ const BooksList = () => {
                   key={`book-list-item-${book.id}`}
                 />
               );
-            }) || "No books were found"}
+            }) || <p data-cy="no-books-found">No books were found</p>}
           </div>
         ) : (
-          "Start typing to see books"
+          <p data-cy="waiting-to-type">"Start typing to see books"</p>
         )}
       </LoadingContainer>
     </div>

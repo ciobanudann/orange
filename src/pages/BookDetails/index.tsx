@@ -12,7 +12,9 @@ const BookDetails = () => {
   return (
     <div className="flex flex-col justify-center gap-4">
       <div className="flex flex-col justify-between gap-4 md:flex-row">
-        <h2 className="text-4xl font-bold">{data?.volumeInfo.title}</h2>
+        <h2 className="text-4xl font-bold" data-cy="title">
+          {data?.volumeInfo.title}
+        </h2>
         <FavoriteButton />
       </div>
       {data?.volumeInfo?.subtitle}
@@ -20,7 +22,7 @@ const BookDetails = () => {
         className="object-contain h-96"
         src={data?.volumeInfo.imageLinks?.thumbnail}
       ></img>
-      {data?.volumeInfo?.description}
+      <p data-cy="description">{data?.volumeInfo?.description}</p>
     </div>
   );
 };
